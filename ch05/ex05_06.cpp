@@ -12,11 +12,16 @@ int main()
 	string str2(str1);
 	cout<<"str2="<<str2<<endl;
 	
+	string str101,str102;
+	str101 = "happy";
+	str102 = str1+str101;
+
 	string str="this is a string";
 	//擷取str字串的第4字元到第15字元作為str3的初始值 
 	string str3(str,4,12);
 	cout<<"str3="<<str3<<endl;
-	
+	cout<<"str101="<<str101<<endl;
+	cout<<"str102="<<str102<<endl;
 	
 	return 0;
 }
