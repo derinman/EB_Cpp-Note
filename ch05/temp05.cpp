@@ -15,10 +15,10 @@ int main(){
     } 
 
     for (i=0; i<count; i++){
-
+        revStr[count-1-i]=str[i];
     }
 
-    cout<<"reverse string: "<<count<<endl;
+    cout<<"reverse string: "<<revStr<<endl;
 
     return 0;
 }
