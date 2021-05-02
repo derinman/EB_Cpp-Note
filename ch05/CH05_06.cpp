@@ -15,7 +15,7 @@ int main()
     cin>>lastname;//輸入字串 
     cout<<input2;
     cin>>firstname;//輸入字串 
-    
+
     string fullname=firstname+ch+lastname;//以運算子作字串的串接 
 	cout<<"您的全名為:"<<fullname<<endl;
     
