@@ -20,10 +20,10 @@ void print_arr(int arr[][5],int r,int c)
 {	//第一維可省略,其它維數的註標都必須清楚定義長度 
 	int i,j;
 	
-	for(i=0; i<r; i++)
-	{
-		for(j=0; j<c;j++)
-	   		printf("%d  ",arr[i][j]);
-       	printf("\n");
+	for(i=0; i<r; i++){
+		for(j=0; j<c;j++){
+	   		cout<<arr[i][j]<<"  ";
+		}
+		cout<<endl;                                                                  
 	}
 }

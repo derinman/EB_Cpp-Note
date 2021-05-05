@@ -8,13 +8,12 @@ int main( void )
     char str1[80];
     char str2[80];
 
-    printf( "請輸入一英文字串：" );
+    cout<<"請輸入一英文字串：";
     cin>>str1;
-    printf( "請輸入一串接字串：" );
+    cout<<"請輸入一串接字串：";
     cin>>str2;
-    printf( "字串串接：%s\n", Strcat(str1, str2) );
+    cout<<"字串串接: "<<Strcat(str1, str2);
     
-
     return 0;
 }
 
