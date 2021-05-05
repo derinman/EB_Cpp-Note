@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
+
 void fun(int, int);/*函數原型宣告*/
- 
 
 int main()
 {		

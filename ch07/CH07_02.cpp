@@ -3,8 +3,8 @@
 using namespace std;
 
 int my_pow(int,int);
-void show_output(int);
 //宣告函數原型
+
 int main()
 {
  
