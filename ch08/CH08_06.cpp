@@ -9,7 +9,6 @@ int main()
 {
     foo(); //呼叫另一個程式檔案中的函數 
     cout<<"x ="<<x<<endl;
-    
-    
+        
     return 0;
 }
