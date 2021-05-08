@@ -38,6 +38,7 @@ int main()
 	}
 	return 0;
 }
+
 void MatrixAdd(int* arrA,int* arrB,int* arrC,int dimX,int dimY)
 {
 	if(dimX<=0||dimY<=0)

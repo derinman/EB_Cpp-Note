@@ -6,18 +6,17 @@ void UStoTW(float);
 float exchange_rate;           //宣告在函數外的變數
 
  
-int main()
-{	
-	auto float dollar;
-	 	cout<<"美元兌換台幣...\n"<<endl;
-	 	cout<<"請輸入目前匯率 : "<<endl;
-	 	cin>>exchange_rate;
-        cout<<"一美元="<<exchange_rate<<"臺幣";
-        cout<<"請輸入欲兌換多少台幣(單位:美元) : ";
-        cin>>dollar;    
-	    UStoTW(dollar);
+int main(){	
+	float dollar;
+	
+	cout<<"美元兌換台幣...\n"<<endl;
+	cout<<"請輸入目前匯率 : "<<endl;
+	cin>>exchange_rate;
+    cout<<"一美元="<<exchange_rate<<"臺幣";
+    cout<<"請輸入欲兌換多少台幣(單位:美元) : ";
+    cin>>dollar;    
+	UStoTW(dollar);
   	
-    
  	return 0;	
 }
 
