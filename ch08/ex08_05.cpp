@@ -2,9 +2,10 @@
 
 //引用時間函數的表頭檔
 #include<ctime>
+
 int mul(int,int);
-int main()
-{	
+
+int main(){	
 	register int i,j;//宣告暫存器變數  
 	float sum;
 	time_t start_time, end_time;//長整數時間資料型態 
@@ -21,9 +22,12 @@ int main()
  	printf("迴圈結束\n");
 	printf("迴圈的執行時間為%f\n\n",difftime(end_time,start_time));
      //difftime 為時間差函數,可回傳秒數 
+
+     
      
      return 0;
 }
+
 int mul(int a,int b)
 {
     return a*b;
