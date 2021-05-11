@@ -4,13 +4,14 @@ using namespace std;
 
 int main()
 {
-    struct foo
-    {
+    struct foo{
         int a;
         int b;
-    } f1; //單純用來說明的範例 
+    };
+    
+    struct foo  f1;
 
-    struct foo *f2 = &f1;//f2 指向 f1結構變數 
+    struct foo *f2 = &f1;
     int i;
 
     f2->a = 1;

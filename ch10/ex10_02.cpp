@@ -2,15 +2,14 @@
 
 using namespace std;
 
-struct circle
-{
+struct circle{
     float r;
     float pi;
     float *area;
 };  // 圓的結構體，並設定其中結構成員area為指標變數 
 
-int main()
-{
+int main(){
+
     struct circle myCircle;
     struct circle *getData;
     
@@ -32,8 +31,6 @@ int main()
     cout<<"getData->pi ="<<getData->pi<<endl;
     cout<<"getData->area ="<<getData->area<<endl;//getData間接取area的位址 
     cout<<"*getData->area ="<<*getData->area<<endl; //getData間接取area的值 
-    
-    
     
     return 0;
 }

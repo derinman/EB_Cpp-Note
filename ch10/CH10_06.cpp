@@ -4,16 +4,16 @@ using namespace std;
 
 int main()
 {
-    struct grade
-   {
-        struct
-        {
+    struct grade{
+        struct{
             const char *name;
             int height;
             int weight;
         } std[3];// 省略了內層結構的名稱定義，而直接使用grade結構來定義
         const char *teacher;
-   }g1={"John",174,65,"Justin",168,56,"Bush",177,80,"Mary"};
+   };
+   
+   struct grade g1={"John",174,65,"Justin",168,56,"Bush",177,80,"Mary"};
     //設定結構變數g1的初始值 
 
     int i;
