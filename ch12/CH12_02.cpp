@@ -19,11 +19,13 @@ public:
         cout << "總分是" << Score_T << "分" << endl;
     }	
 };
+
 float add_score(Student a)     //定義add_score函數
 {
     a.Score_T+=30;
     return a.Score_T;
 }
+
 int main()
 {
     Student stud1(920101,80,90);    //給予stud1物件初值

@@ -1,13 +1,15 @@
 #include <iostream>  
  
 using namespace std;
-  
+
 class Share;  
+
 class Friend  
 {  
 public:  
     void Access(Share* s);//在類別Friend中宣告Access成員函數       
 };  
+
 class Share  
 {  
     friend void Friend::Access(Share* s); 
@@ -21,6 +23,7 @@ public:
     Share()  {  a = 1;  b = 2;  c = 3; 	}  
     void printC(){ cout<<"使用Share的public方法"<<endl; } 
 };  
+
 void Friend::Access(Share* s)
 {  
     s->a = s->b = s->c = 5;  
@@ -30,6 +33,7 @@ void Friend::Access(Share* s)
     s->printB();  
     s->printC();  
 } //定義類別Friend成員函數Access的內容         
+
 int  main()  
 {  
     Share sh;  

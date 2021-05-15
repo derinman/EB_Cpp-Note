@@ -20,6 +20,7 @@ public:
     //宣告公用的函式成員showplayer的原型用以顯示打擊者資料
     void showplayer();          
 };
+
 void Baseball:: inputplayer (void)       //類別外實現inputplayer函式成員
 {
     cout<<"打擊者：";                     
@@ -44,7 +45,8 @@ float Baseball::countsafe()             //類別外實現countsafe函式成員
     float counts;                           //宣告打擊率變數
     counts=(float(safes) / float(fires));   //計算打擊率 安打次數/打擊次數
     return counts;                          //傳回打擊率
-} 
+}
+
 int main()
 {
     Baseball b[3];         //宣告類別陣列

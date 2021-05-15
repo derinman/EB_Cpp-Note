@@ -17,6 +17,7 @@ public:
 			strcpy(tName, "Andy");  //指定tName的值
 	}
 };
+
 class Student                 
 {
 private:                       
