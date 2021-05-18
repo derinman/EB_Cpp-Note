@@ -3,8 +3,7 @@
 using namespace std;
 	
 	//定義類別Addsum
-class Addsum
-{
+class Addsum{
 	int x;
 	public:
 	//宣告建構子函數原型

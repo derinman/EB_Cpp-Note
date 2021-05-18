@@ -20,6 +20,7 @@ void Square::squ_sum(Square *b)   //函數squ_sum程式碼實作
      cout<<"兩數的平方和: "<<a<<endl;
      cout<<"-----------------------------------"<<endl;
 }
+
 int main()
 {
       Square first(8),second(6);
