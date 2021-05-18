@@ -6,17 +6,16 @@ class Square    //定義Square類別
 {
     int a;
 public:
-    Square(int n)
-    {
+    Square(int n){
         a=n*n;
     }//建構子的定義 
-    Square squ_sum(Square b)
-    {
+    
+    Square squ_sum(Square b){
         this->a=this->a+b.a;
         return  *this;//透過this指標傳回Square類別物件 
     }  
-    int show_data()
-    {
+
+    int show_data(){
         cout<<(*this).a<<endl;//列印私有資料成員a的值 
         return 0;
     }

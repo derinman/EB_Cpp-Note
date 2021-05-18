@@ -25,7 +25,9 @@ class BookShelf  //定義外圍類別BookShelf
             char* getTitle() { return title; }  
             int getPrice() { return price; } 
 	};  
+    
     Book* book[10];  
+    
     public:  
         BookShelf(const char* n) 
         {  
@@ -49,7 +51,9 @@ class BookShelf  //定義外圍類別BookShelf
                 cout<<book[i]->getTitle()<<book[i]->getPrice()<<endl;  
         }  
 };  
+
 int BookShelf::MAX_BOOKS = 10;  
+
 int main() 
 {  
     BookShelf bks("我的書架");  
