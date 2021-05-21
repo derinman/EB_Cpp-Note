@@ -4,11 +4,10 @@
 using namespace std;
 
   //宣告類別Student
-  class Student
-  {
+  class Student{
      public:
-       char Student_Num[10];                   //學號
-       int Student_Score;                       //總分
+       char Student_Num[10];                   
+       int Student_Score;
   //建構子
      Student() {}
   //Student函數：設定學生編號及總分

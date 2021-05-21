@@ -4,8 +4,7 @@ using namespace std;
 
 //宣告類別Student
 
-class Student
-{
+class Student{
   public:
      char *Student_Name;  //學生姓名
      long Name_Len;    //字串長度
@@ -27,8 +26,7 @@ class Student
      friend istream& operator>>(istream& input, Student& obj);
  };//多載「[]」運算子宣告內容
  
- char Student::operator[](int In_Num)
- {
+ char Student::operator[](int In_Num){
  //若In_Num值超過字串長度，則將In_Num值設為Name_Len -1
   if (In_Num >= Name_Len)
   {
@@ -39,25 +37,26 @@ class Student
   In_Num = 1;
   }//傳回取得的字元
   return Student_Name[In_Num];
-  }
+}
   //>>運算子多載宣告
-  istream& operator>>(istream& input, Student& obj)
- {
+  
+istream& operator>>(istream& input, Student& obj){
   cout <<"請輸入學生姓名：";
   input >>obj.Student_Name;
   cout <<endl <<"請輸入您想取得第幾個字元：";
   input >>obj.Str_Num;
   return input;
-  }
- int main()
- {
+}
+ 
+int main(){
   Student x; //利用剛宣告的>>運算子多載輸入物件x的資料
+  
   cin >>x;
+
   cout <<endl <<"學生姓名：" <<x.Student_Name <<endl;
   //利用剛宣告的[]運算子多載，輸出所選擇的字元
   cout <<endl <<"學生姓名的第" <<x.Str_Num;
   cout <<"個字元為：" <<x.Student_Name[x.Str_Num - 1] <<endl;
   
-  
   return 0;
- }
+}

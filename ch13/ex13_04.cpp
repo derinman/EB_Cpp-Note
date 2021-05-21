@@ -31,9 +31,9 @@ class Matrix     // 計算矩陣相加的自訂類別
    Matrix operator +(Matrix t2);           // 多載指定運算子+的函數宣告  
    // 並設定傳回型態為Matrix類別型態  
    void ShowInfo();         // 宣告顯示矩陣內容的函數原型宣告  
- };  
- Matrix Matrix::operator +(Matrix t2)  
- {  
+ }; 
+
+ Matrix Matrix::operator +(Matrix t2)  {  
   int i,j; 
   Matrix MatOut;  
    for (i=0; i<2; i++)  
@@ -41,16 +41,16 @@ class Matrix     // 計算矩陣相加的自訂類別
      MatOut.Matrix_Num[i][j]=Matrix_Num[i][j]+t2.Matrix_Num[i][j]; // 透過迴圈計算矩陣相加的結果 
       return (MatOut);  
    }  
-  void Matrix::ShowInfo()  
-  {  
+
+  void Matrix::ShowInfo() {  
     int i,j;  
     for (i=0; i<2; i++) 
      for (j=0; j<2; j++)  
       cout << Matrix_Num[i][j] << "\t";  // 透過迴圈計算矩陣相加的結果  
       cout << endl;  
-   }  
- int main()  
- {  
+   }
+
+ int main(){  
   Matrix M1,M2,M3; 
   int a1,a2,b1,b2;  
   cout << "請輸入M1矩陣的值：";  
@@ -66,5 +66,4 @@ class Matrix     // 計算矩陣相加的自訂類別
   
   
   return 0;
-  
-  }
+}
