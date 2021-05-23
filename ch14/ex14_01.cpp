@@ -13,7 +13,8 @@ class car {
             cout << "汽車熄火!"<< endl << endl;
        }
          };
-       class freighter: public car
+       
+class freighter: public car
       	{
       public:
        void stop()   // 覆寫成員函數,原先繼承自car類別的成員函數則會被取代
@@ -21,6 +22,7 @@ class car {
             cout << "freighter類別 :汽車熄火!"<< endl << endl;
           }
            };
+           
         int main()
          {
           freighter ft;
