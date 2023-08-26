@@ -9,3 +9,11 @@ int main()
     
     return 0;
 }
+
+// Omitting Namespace
+// #include <iostream>
+
+// int main() {
+//   std::cout << "Hello World!";
+//   return 0;
+// }
