@@ -13,6 +13,5 @@ int main()
     b=a+b+c;//計算a+b+c的結果後指派給變數a 	   
     cout<<"b="<<b<<endl;
     
-    
     return 0;	
 }

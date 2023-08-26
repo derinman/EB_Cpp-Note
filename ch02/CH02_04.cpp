@@ -11,6 +11,5 @@ int main()
     cout<<"雙引號的應用->"<<ch<<"榮欽科技"<<ch<<endl; //雙引號的應用	
     cout<<'\a';//發出嗶一聲 
     
-    
     return 0;	
 }
