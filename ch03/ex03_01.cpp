@@ -19,6 +19,5 @@ int main()
     cout<<"B="<<B<<endl;
     cout<<"C="<<C<<endl;
     
-    
     return 0;
 }
